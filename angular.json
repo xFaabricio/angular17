@@ -4,6 +4,12 @@
   "newProjectRoot": "projects",
   "projects": {
     "angular17": {
+      "i18n" : {
+        "sourceLocale": "pt-BR",
+        "locales": {
+          "en-US": "src/locale/messages.en.xlf"
+        }
+      },
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,6 +23,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
+            "localize": ["pt-BR"],
             "outputPath": "dist/angular17",
             "index": "src/index.html",
             "browser": "src/main.ts",
@@ -102,5 +109,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "267d25d7-064d-436d-bbe4-b0bb72701ff4"
   }
 }
