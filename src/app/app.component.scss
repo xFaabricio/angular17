@@ -1,0 +1,9 @@
+/* Estilo para o modo escuro */
+[data-bs-theme="dark"] :host ::ng-deep .custom-text {
+    color: white !important;
+}
+
+/* Estilo para o modo claro */
+[data-bs-theme="light"] :host ::ng-deep .custom-text {
+    color: black; /* Ou a cor preta desejada */
+}
