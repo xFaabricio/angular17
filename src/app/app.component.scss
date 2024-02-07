@@ -7,3 +7,8 @@
 [data-bs-theme="light"] :host ::ng-deep .custom-text {
     color: black; /* Ou a cor preta desejada */
 }
+
+section {
+    min-height: 100vh;
+    padding: 10rem 5% 2rem;
+}

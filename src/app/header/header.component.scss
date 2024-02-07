@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem 9%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 2.5rem;    
+    font-weight: 600;
+    line-height: 100%;
+    letter-spacing: -0.125rem;
+    margin: 0;    
+    background-size: contain; 
+    background-repeat: no-repeat;
+    width: 17rem;
+    height: 5rem;
+}
+
+[data-bs-theme="dark"] :host ::ng-deep .logo {
+    background-image: url('/assets/images/logo-dark.svg');
+}
+
+[data-bs-theme="light"] :host ::ng-deep .logo {
+    background-image: url('/assets/images/logo.svg');
+}
+
+[data-bs-theme="dark"] :host ::ng-deep .header .nav a {
+    color: white;
+}
+
+[data-bs-theme="light"] :host ::ng-deep .header .nav a {
+    color: black;
+}
+
+[data-bs-theme="dark"] :host ::ng-deep .header .nav a:hover {
+    color: rgb(0, 255, 0);
+}
+
+[data-bs-theme="light"] :host ::ng-deep .header .nav a:hover {
+    color: rgb(0, 255, 0);
+}
+
+.header .nav a {
+    font-size: 1.7rem;
+    font-weight: 500;
+    margin-left: 3.5rem;
+    transition: .3s;    
+}
+
+.header .nav a.active {
+    text-decoration: underline;
+}
+
+#menu-icon {
+    font-size: 3.6rem;
+    color: blue;
+    cursor: pointer;
+    display: none;
+}
+

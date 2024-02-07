@@ -40,7 +40,11 @@
               "src/styles.scss",
               "./node_modules/bootstrap/dist/css/bootstrap.css"
             ],
-            "scripts": ["./node_modules/jquery/dist/jquery.js", "./node_modules/bootstrap/dist/js/bootstrap.js", "src/assets/scripts/custom.js"],
+            "scripts": [
+              "./node_modules/jquery/dist/jquery.js", 
+              "./node_modules/bootstrap/dist/js/bootstrap.js",
+              "src/assets/scripts/custom.js"
+            ],
             "server": "src/main.server.ts",
             "prerender": true,
             "ssr": {
