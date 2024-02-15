@@ -25,3 +25,10 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+
+## NOTES
+
+1. O preview do markdown é CTRL + SHIFT + V
+2. Localmente o ng serve roda apenas a lingua principal, para subir todas linguas é necessário usar o serve, http-server ou similares
+3. Para buildar para subir no vercel todas linguas, usar o ng build --localize
