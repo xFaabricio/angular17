@@ -9,12 +9,12 @@
         <a href="#about">About</a>
         <a href="#skills">Skills</a>
         <a href="#contact">Contact</a>
-
-        <div>
-            <input type="checkbox" id="nav-toggle" class="nav-toggle">
+        <div style="margin-left: 50px;min-width: 110px;">
+            <input id="darkMode" type="checkbox" [checked]="darkMode" (change)="updateDarkMode($event)"/>
+            <label for="darkMode" style="width: 100px;"></label>
         </div>
-        <div>
-            <button>Login</button>
+        <div style="margin-top: 8px;margin-left: 60px;">
+            <button class="login-btn">Entrar</button>
         </div>
     </nav>
 

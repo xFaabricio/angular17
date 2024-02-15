@@ -1,7 +1,7 @@
 {
-    "routes": [
-      { "src": "/", "dest": "/pt-BR" },
-      { "src": "/pt-BR", "dest": "/pt-BR/index.html" },
-      { "src": "/en-US", "dest": "/en-US/index.html" }
-    ]
-  }
+  "routes": [
+    { "src": "/", "dest": "/pt-BR" },
+    { "src": "/pt-BR", "dest": "/pt-BR/index.html" },
+    { "src": "/en-US", "dest": "/en-US/index.html" }
+  ]
+}
