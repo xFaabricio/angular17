@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { CookieService } from 'ngx-cookie-service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-header',
@@ -12,7 +13,7 @@ export class HeaderComponent {
 
   darkMode: boolean = false;
 
-  constructor(private cookieService: CookieService) {    
+  constructor(private cookieService: CookieService, private router: Router) {       
     if (this.cookieService.check('darkMode')) {      
       this.darkMode = this.cookieService.get('darkMode') === 'true';
     } else {      
@@ -35,6 +36,16 @@ export class HeaderComponent {
       const element = document.body as HTMLElement;
       element.dataset['bsTheme'] = this.darkMode ? "dark" : "light";
     }
+  }
+
+  redirectToPTBR(): void {
+    console.log('pt-BR');
+    this.router.navigate(['/pt-BR']);
+  }
+
+  redirectToENUS(): void {
+    console.log('en-US');
+    this.router.navigate(['/en-US']);
   }
 
 }

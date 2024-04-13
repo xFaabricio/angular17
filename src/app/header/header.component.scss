@@ -9,12 +9,23 @@
     font-family: 'Poppins', sans-serif;
 }
 
+.a-flag {    
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: inherit;
+    font-style: inherit;
+    font-size: inherit;
+    font-family: inherit;
+    line-height: inherit;    
+}
+
 .header {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    padding: 2rem 9%;
+    padding: 2rem 12%;
     background: transparent;
     display: flex;
     justify-content: space-between;
@@ -32,6 +43,12 @@
     background-repeat: no-repeat;
     width: 17rem;
     height: 5rem;
+}
+
+.flag {
+    margin-right: 1.5rem;
+    margin-left: 1.5rem;
+    margin-top: 2px;
 }
 
 [data-bs-theme="dark"] :host ::ng-deep .logo {
