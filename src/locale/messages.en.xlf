@@ -74,29 +74,17 @@
           <context context-type="linenumber">58,59</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="187187500641108332" datatype="html">
+      <trans-unit id="linkTitle" datatype="html">
         <source>Explore os documentos</source>
-        <target>Explore the Docs</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/app.component.html</context>
-          <context context-type="linenumber">249,250</context>
-        </context-group>
+        <target>Explore the Docs</target>        
       </trans-unit>
-      <trans-unit id="187187500641108332" datatype="html">
+      <trans-unit id="linkTitle" datatype="html">
         <source>Aprenda com tutoriais</source>
-        <target>Learn with Tutorials</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/app.component.html</context>
-          <context context-type="linenumber">249,250</context>
-        </context-group>
+        <target>Learn with Tutorials</target>        
       </trans-unit>
-      <trans-unit id="187187500641108332" datatype="html">
+      <trans-unit id="linkTitle" datatype="html">
         <source>Angular serviço de idiomas</source>
-        <target>Angular Language Service</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/app.component.html</context>
-          <context context-type="linenumber">249,250</context>
-        </context-group>
+        <target>Angular Language Service</target>        
       </trans-unit>
     </body>
   </file>
