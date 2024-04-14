@@ -18,6 +18,30 @@
           <context context-type="linenumber">229,230</context>
         </context-group>
       </trans-unit>
+      <trans-unit id="1241805902089778333" datatype="html">
+        <source>Explore os documentos</source>
+        <target>Explore the Docs</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">237,238</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3955352176238841415" datatype="html">
+        <source>Aprenda com tutoriais</source>
+        <target>Learn with Tutorials</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">243,244</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1710495878683112628" datatype="html">
+        <source>Angular serviço de idiomas</source>
+        <target>Angular Language Service</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">255,256</context>
+        </context-group>
+      </trans-unit>
       <trans-unit id="6333053818705726495" datatype="html">
         <source>Principal</source>
         <target>Home</target>
@@ -73,19 +97,7 @@
           <context context-type="sourcefile">src/app/header/header.component.html</context>
           <context context-type="linenumber">58,59</context>
         </context-group>
-      </trans-unit>
-      <trans-unit id="linkTitle" datatype="html">
-        <source>Explore os documentos</source>
-        <target>Explore the Docs</target>        
-      </trans-unit>
-      <trans-unit id="linkTitle" datatype="html">
-        <source>Aprenda com tutoriais</source>
-        <target>Learn with Tutorials</target>        
-      </trans-unit>
-      <trans-unit id="linkTitle" datatype="html">
-        <source>Angular serviço de idiomas</source>
-        <target>Angular Language Service</target>        
-      </trans-unit>
+      </trans-unit>      
     </body>
   </file>
 </xliff>
