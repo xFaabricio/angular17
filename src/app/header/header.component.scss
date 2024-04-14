@@ -190,19 +190,24 @@ input {
 }
 
 .open {
-    display: block;
-    margin-top: 50px;
-    right: 40px;    
+    margin-top: 60px;
+    width: 220px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 60px;
+    right: 40px;
 }
 
 #dropdown-darkMode {
-    margin-left: 35px !important;
+    margin-left: 10px !important;
     margin-bottom: 10px;
+    margin-top: 10px;
 }
 
 #dropdown-login {
-    margin-top: 10px !important;
-    margin-left: 35px !important;
+    margin-top: 10px !important;    
     margin-bottom: 10px !important;
 }
 
@@ -220,7 +225,7 @@ input {
 
 .dropdown-flags {
     display: flex;
-    justify-content: normal;
+    margin-right: 15px;
 }
 
 [data-bs-theme="dark"] :host ::ng-deep .login-btn {     
@@ -247,7 +252,7 @@ input {
     border: 1px solid #408c9e;
 }
 
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1540px) {
     #home {
         display: none;
     }
@@ -257,7 +262,7 @@ input {
     }
 }
 
-@media screen and (max-width: 1240px) {
+@media screen and (max-width: 1350px) {
     #about {
         display: none;
     }
@@ -271,11 +276,11 @@ input {
     }
 
     a {
-        margin-left: 1.65rem !important;
+        margin-left: 0.5rem !important;
     }
 }
 
-@media screen and (max-width: 1180px) {
+@media screen and (max-width: 1250px) {
     #skills {
         display: none;
     }
@@ -302,11 +307,6 @@ input {
 
     #dropdown-ptBR, #dropdown-enUS {
         display: block;
-    }
-
-    .open {
-        display: block;
-        margin-top: 60px;        
     }
 }
 
