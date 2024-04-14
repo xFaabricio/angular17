@@ -252,6 +252,12 @@ input {
     border: 1px solid #408c9e;
 }
 
+@media (min-width: 1541px) {
+    .open {
+        display: none;
+    }
+}
+
 @media screen and (max-width: 1540px) {
     #home {
         display: none;
