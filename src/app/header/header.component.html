@@ -2,26 +2,65 @@
     
     <a href="#" class="logo"></a>    
 
-    <div class="bx bx-menu" id="menu-icon" id="menu-icon"></div>
-
     <nav class="nav">
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#contact" style="margin-right: 1.5rem !important;">Contact</a>
-        <a href="/pt-BR">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Flag_of_Brazil.svg" width="45" height="45" />
+        <a href="#home" id="home">Home</a>
+        <a href="#about" id="about">About</a>
+        <a href="#skills" id="skills">Skills</a>
+        <a href="#contact" id="contact">Contact</a>
+        <a href="/pt-BR" class="flag" id="flag-ptBR">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Flag_of_Brazil.svg" width="40" height="40" />
         </a>
-        <a href="/en-US">
+        <a href="/en-US" class="flag" id="flag-enUS">
             <img src="https://upload.wikimedia.org/wikipedia/commons/a/a4/Flag_of_the_United_States.svg" width="45" height="45" />
         </a>        
-        <div style="margin-left: 50px;min-width: 110px;">
+        <div style="margin-left: 50px;min-width: 110px;" id="divDarkMode">
             <input id="darkMode" type="checkbox" [checked]="darkMode" (change)="updateDarkMode($event)"/>
             <label for="darkMode" style="width: 100px;"></label>
         </div>
-        <div style="margin-top: 8px;margin-left: 60px;">
+        <div style="margin-top: 8px;margin-left: 35px;" id="divLogin">
             <button class="login-btn">Entrar</button>
         </div>
+        <div id="menu-icon">
+            <i class="bx bx-menu" (click)="dropdownMenuAction()"></i>
+        </div>
+
+        <div class="dropdown-menu" id="dropdown-menu">
+            <li>
+                <a href="#home" id="dropdown-home">Home</a>
+            </li>
+            <li>
+                <a href="#about" id="dropdown-about">About</a>
+            </li>
+            <li>
+                <a href="#skills" id="dropdown-skills">Skills</a>
+            </li>
+            <li>
+                <a href="#contact" id="dropdown-contact">Contact</a>
+            </li>
+            <li>
+                <div class="dropdown-flags">
+                    <a href="/pt-BR" class="flag" id="dropdown-ptBR">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Flag_of_Brazil.svg" width="40" height="40" />
+                    </a>            
+                    <a href="/en-US" class="flag" id="dropdown-enUS">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a4/Flag_of_the_United_States.svg" width="45" height="45" />
+                    </a>
+                </div>
+            </li>   
+            <li>
+                <div style="margin-left: 50px;min-width: 110px;" id="dropdown-darkMode">
+                    <input id="darkMode" type="checkbox" [checked]="darkMode" (change)="updateDarkMode($event)"/>
+                    <label for="darkMode" style="width: 100px;"></label>
+                </div>
+            </li>
+            <li>
+                <div style="margin-top: 8px;margin-left: 35px;" id="dropdown-login">
+                    <button class="login-btn">Entrar</button>
+                </div>
+            </li>
+        </div>
     </nav>
+
+    
 
 </header>

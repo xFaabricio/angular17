@@ -9,23 +9,12 @@
     font-family: 'Poppins', sans-serif;
 }
 
-.a-flag {    
-    color: inherit;
-    text-decoration: none;
-    cursor: pointer;
-    font-weight: inherit;
-    font-style: inherit;
-    font-size: inherit;
-    font-family: inherit;
-    line-height: inherit;    
-}
-
 .header {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    padding: 2rem 12%;
+    padding: 2rem 5%;
     background: transparent;
     display: flex;
     justify-content: space-between;
@@ -46,9 +35,8 @@
 }
 
 .flag {
-    margin-right: 1.5rem;
-    margin-left: 1.5rem;
-    margin-top: 2px;
+    margin-left: 1.5rem !important;
+    margin-top: 2px !important;
 }
 
 [data-bs-theme="dark"] :host ::ng-deep .logo {
@@ -75,6 +63,14 @@
     color: rgb(0, 255, 0);
 }
 
+[data-bs-theme="dark"] :host ::ng-deep #dropdown-menu a:hover {
+    color: rgb(0, 255, 0);
+}
+
+[data-bs-theme="light"] :host ::ng-deep #dropdown-menu a:hover {
+    color: rgb(0, 255, 0);
+}
+
 .header .nav a {
     font-size: 1.7rem;
     font-weight: 500;
@@ -88,10 +84,11 @@
 }
 
 #menu-icon {
-    font-size: 3.6rem;
-    color: blue;
+    font-size: 2.5rem;
     cursor: pointer;
     display: none;
+    margin-left: 2.5rem;
+    padding-top: 5px;
 }
 
 .margin-input-button {
@@ -196,6 +193,40 @@ input {
     transition: background-color 0.3s, color 0.3s, border-color 0.3s;
 }
 
+.open {
+    display: block;
+    margin-top: 50px;
+    right: 40px;    
+}
+
+#dropdown-darkMode {
+    margin-left: 35px !important;
+    margin-bottom: 10px;
+}
+
+#dropdown-login {
+    margin-top: 10px !important;
+    margin-left: 35px !important;
+    margin-bottom: 10px !important;
+}
+
+#dropdown-menu a {
+    color: white;
+}
+
+[data-bs-theme="dark"] :host ::ng-deep .dropdown-menu {    
+    background: rgba(255, 255, 255, 0.1);
+}
+
+[data-bs-theme="light"] :host ::ng-deep .dropdown-menu {
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.dropdown-flags {
+    display: flex;
+    justify-content: normal;
+}
+
 [data-bs-theme="dark"] :host ::ng-deep .login-btn {     
     background-color: #343a40;
     border: 1px solid #6c757d;
@@ -218,6 +249,89 @@ input {
     background-color: #409bc2;
     color: #e6e6e6;
     border: 1px solid #408c9e;
+}
+
+@media screen and (max-width: 1400px) {
+    #home {
+        display: none;
+    }
+
+    #dropdown-about, #dropdown-home, #dropdown-skills, #dropdown-contact, #dropdown-ptBR , #dropdown-enUS, #dropdown-darkMode, #dropdown-login {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1240px) {
+    #about {
+        display: none;
+    }
+
+    #menu-icon {
+        display: flex;
+    }
+
+    #dropdown-about, #dropdown-home {
+        display: block;
+    }
+
+    a {
+        margin-left: 1.65rem !important;
+    }
+}
+
+@media screen and (max-width: 1180px) {
+    #skills {
+        display: none;
+    }
+
+    #dropdown-skills {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 1040px) {
+    #contact {
+        display: none;
+    }
+
+    #dropdown-contact {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 880px) {
+    #flag-ptBR, #flag-enUS {
+        display: none;
+    }
+
+    #dropdown-ptBR, #dropdown-enUS {
+        display: block;
+    }
+
+    .open {
+        display: block;
+        margin-top: 60px;        
+    }
+}
+
+@media screen and (max-width: 750px) {
+    #divDarkMode {
+        display: none;
+    }
+
+    #dropdown-darkMode {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    #divLogin {
+        display: none;
+    }
+
+    #dropdown-login {
+        display: block;
+    }
 }
 
 @media screen and (max-width: 600px) {

@@ -1,19 +1,20 @@
-import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { Component, Renderer2, ElementRef } from '@angular/core';
 import { CookieService } from 'ngx-cookie-service';
-import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './header.component.html',
-  styleUrl: './header.component.scss'
+  styleUrl: './header.component.scss',
 })
 export class HeaderComponent {
 
   darkMode: boolean = false;
+  dropdownActive: boolean = false;
 
-  constructor(private cookieService: CookieService, private router: Router) {       
+  constructor(private cookieService: CookieService, private renderer: Renderer2, private el: ElementRef) {       
     if (this.cookieService.check('darkMode')) {      
       this.darkMode = this.cookieService.get('darkMode') === 'true';
     } else {      
@@ -38,14 +39,28 @@ export class HeaderComponent {
     }
   }
 
-  redirectToPTBR(): void {
-    console.log('pt-BR');
-    this.router.navigate(['/pt-BR']);
+  dropdownMenuAction(): void {
+    if(this.dropdownActive){
+      this.removeClassById('dropdown-menu', 'open');
+      this.dropdownActive = false;
+    }else{
+      this.addClassById('dropdown-menu', 'open');
+      this.dropdownActive = true;
+    }
   }
 
-  redirectToENUS(): void {
-    console.log('en-US');
-    this.router.navigate(['/en-US']);
+  removeClassById(id: string, classe: string) {
+    const element = this.el.nativeElement.querySelector(`#${id}`);
+    if (element) {
+      this.renderer.removeClass(element, classe);
+    }
   }
+
+  addClassById(id: string, classe: string) {
+    const element = this.el.nativeElement.querySelector(`#${id}`);
+    if (element) {
+      this.renderer.addClass(element, classe);
+    }
+  }  
 
 }
