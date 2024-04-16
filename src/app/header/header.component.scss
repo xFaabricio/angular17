@@ -233,9 +233,9 @@ input {
 }
 
 [data-bs-theme="light"] :host ::ng-deep .login-btn {
-    background-color: #5bc0de;
-    border: 1px solid #46b8da;
-    color: #ffffff;
+    background-color: #7c898b;
+    border: 1px solid #253439;
+    color: #fff;
 }
 
 [data-bs-theme="dark"] :host ::ng-deep .login-btn:hover {
@@ -245,9 +245,9 @@ input {
 }
 
 [data-bs-theme="light"] :host ::ng-deep .login-btn:hover {
-    background-color: #409bc2;
+    background-color: #253439;
     color: #e6e6e6;
-    border: 1px solid #408c9e;
+    border: 1px solid #253439;
 }
 
 @media (min-width: 1400px) {
