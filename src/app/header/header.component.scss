@@ -190,7 +190,6 @@ input {
 }
 
 .open {
-    margin-top: 60px;
     width: 220px !important;
     display: flex;
     justify-content: center;
@@ -201,8 +200,7 @@ input {
 }
 
 #dropdown-darkMode {
-    margin-left: 10px !important;
-    margin-bottom: 10px;
+    margin-left: 10px !important;    
     margin-top: 10px;
 }
 
@@ -213,6 +211,10 @@ input {
 
 #dropdown-menu a {
     color: white;
+}
+
+#dropdown-menu li {
+    margin-bottom: 5px !important;
 }
 
 [data-bs-theme="dark"] :host ::ng-deep .dropdown-menu {    
@@ -258,7 +260,7 @@ input {
     }
 }
 
-@media screen and (max-width: 1540px) {
+@media screen and (max-width: 1580px) {
     #home {
         display: none;
     }
@@ -268,7 +270,7 @@ input {
     }
 }
 
-@media screen and (max-width: 1350px) {
+@media screen and (max-width: 1385px) {
     #about {
         display: none;
     }
@@ -286,7 +288,7 @@ input {
     }
 }
 
-@media screen and (max-width: 1290px) {
+@media screen and (max-width: 1325px) {
     #skills {
         display: none;
     }
@@ -296,7 +298,7 @@ input {
     }
 }
 
-@media screen and (max-width: 1040px) {
+@media screen and (max-width: 1080px) {
     #contact {
         display: none;
     }
@@ -306,7 +308,7 @@ input {
     }
 }
 
-@media screen and (max-width: 880px) {
+@media screen and (max-width: 900px) {
     #flag-ptBR, #flag-enUS {
         display: none;
     }

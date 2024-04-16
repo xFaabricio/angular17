@@ -8,17 +8,17 @@
         <a href="#skills" id="skills" i18n>Habilidades</a>
         <a href="#contact" id="contact" i18n>Contato</a>
         <a href="/pt-BR" class="flag" id="flag-ptBR">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Flag_of_Brazil.svg" width="40" height="40" />
+            <img src="https://www.curitiba.pr.leg.br/atividade-parlamentar/legislacao/imagens/bandeira-do-brasil.png" width="61" height="35">
         </a>
         <a href="/en-US" class="flag" id="flag-enUS">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a4/Flag_of_the_United_States.svg" width="45" height="45" />
+            <img src="https://upload.wikimedia.org/wikipedia/commons/d/de/Flag_of_the_United_States.png" width="61" height="35">
         </a>        
         <div style="margin-left: 50px;min-width: 110px;" id="divDarkMode">
             <input id="darkMode" type="checkbox" [checked]="darkMode" (change)="updateDarkMode($event)"/>
             <label for="darkMode" style="width: 100px;"></label>
         </div>
         <div style="margin-top: 8px;margin-left: 35px;" id="divLogin">
-            <button class="login-btn">Entrar</button>
+            <button class="login-btn" i18n>Entrar</button>
         </div>
         <div id="menu-icon">
             <i class="bx bx-menu" (click)="dropdownMenuAction()"></i>
@@ -40,10 +40,10 @@
             <li>
                 <div class="dropdown-flags">
                     <a href="/pt-BR" class="flag" id="dropdown-ptBR">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Flag_of_Brazil.svg" width="40" height="40" />
+                        <img src="https://www.curitiba.pr.leg.br/atividade-parlamentar/legislacao/imagens/bandeira-do-brasil.png" width="61" height="35">
                     </a>            
                     <a href="/en-US" class="flag" id="dropdown-enUS">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a4/Flag_of_the_United_States.svg" width="45" height="45" />
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/d/de/Flag_of_the_United_States.png" width="61" height="35">
                     </a>
                 </div>
             </li>   
