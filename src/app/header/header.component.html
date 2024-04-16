@@ -25,19 +25,19 @@
         </div>
 
         <div class="dropdown-menu" id="dropdown-menu">
-            <li>
+            <li id="dropdown-home-li">
                 <a href="#home" id="dropdown-home" i18n>Principal</a>
             </li>
-            <li>
+            <li id="dropdown-about-li">
                 <a href="#about" id="dropdown-about" i18n>Sobre</a>
             </li>
-            <li>
+            <li id="dropdown-skills-li">
                 <a href="#skills" id="dropdown-skills" i18n>Habilidades</a>
             </li>
-            <li>
+            <li id="dropdown-contact-li">
                 <a href="#contact" id="dropdown-contact" i18n>Contato</a>
             </li>
-            <li>
+            <li id="dropdown-flags-li">
                 <div class="dropdown-flags">
                     <a href="/pt-BR" class="flag" id="dropdown-ptBR">
                         <img src="https://www.curitiba.pr.leg.br/atividade-parlamentar/legislacao/imagens/bandeira-do-brasil.png" width="61" height="35">
@@ -47,13 +47,13 @@
                     </a>
                 </div>
             </li>   
-            <li>
+            <li id="dropdown-darkMode-li">
                 <div style="min-width: 110px;" id="dropdown-darkMode">
                     <input id="darkMode" type="checkbox" [checked]="darkMode" (change)="updateDarkMode($event)"/>
                     <label for="darkMode" style="width: 100px;"></label>
                 </div>
             </li>
-            <li>
+            <li id="dropdown-login-li">
                 <div id="dropdown-login">
                     <button class="login-btn" i18n>Entrar</button>
                 </div>
