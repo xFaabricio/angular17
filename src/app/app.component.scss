@@ -1,3 +1,15 @@
+[data-bs-theme="dark"] :host ::ng-deep body {
+    background-image: url('../assets/images/background-dark.jpeg');
+    background-size: cover;
+    background-position: center;
+}
+
+[data-bs-theme="light"] :host ::ng-deep body {
+    background-image: url('../assets/images/background-light.avif');
+    background-size: cover;
+    background-position: center;
+}
+
 /* Estilo para o modo escuro */
 [data-bs-theme="dark"] :host ::ng-deep .custom-text {
     color: white !important;
