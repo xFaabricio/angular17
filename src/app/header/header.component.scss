@@ -20,6 +20,9 @@
     justify-content: space-between;
     align-items: center;
     z-index: 100;
+    backdrop-filter: blur(50px);
+    height: 100px;
+    background: rgba(0, 0, 0, .1);
 }
 
 .logo {
@@ -32,6 +35,7 @@
     background-repeat: no-repeat;
     width: 17rem;
     height: 5rem;
+    margin-top: 20px;
 }
 
 .flag {
@@ -47,28 +51,12 @@
     background-image: url('../../assets/images/logo.svg');
 }
 
-[data-bs-theme="dark"] :host ::ng-deep .header .nav a {
-    color: white;
+.header .nav a:hover {
+    color: #B3E0F2;
 }
 
-[data-bs-theme="light"] :host ::ng-deep .header .nav a {
-    color: black;
-}
-
-[data-bs-theme="dark"] :host ::ng-deep .header .nav a:hover {
-    color: rgb(0, 255, 0);
-}
-
-[data-bs-theme="light"] :host ::ng-deep .header .nav a:hover {
-    color: rgb(0, 255, 0);
-}
-
-[data-bs-theme="dark"] :host ::ng-deep #dropdown-menu a:hover {
-    color: rgb(0, 255, 0);
-}
-
-[data-bs-theme="light"] :host ::ng-deep #dropdown-menu a:hover {
-    color: rgb(0, 255, 0);
+#dropdown-menu a:hover {
+    color: #B3E0F2;
 }
 
 .header .nav a {
@@ -77,6 +65,7 @@
     margin-left: 3.5rem;
     transition: .3s;
     margin-top: 5px;
+    color: white;
 }
 
 .header .nav a.active {
