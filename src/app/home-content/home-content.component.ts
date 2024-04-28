@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 import { DividerModule } from 'primeng/divider';
 import { StyleClassModule } from 'primeng/styleclass';
-import { ChartModule } from 'primeng/chart';
 import { PanelModule } from 'primeng/panel';
 import { ButtonModule } from 'primeng/button';
 import { CommonModule } from '@angular/common';
+import { LayoutService } from '../service/app.layout.service';
+import { AppComponent } from '../app.component';
 
 
 @Component({
@@ -19,5 +20,10 @@ import { CommonModule } from '@angular/common';
   styleUrl: './home-content.component.scss'
 })
 export class HomeContentComponent {
+  
+  constructor(public appComponent: AppComponent) { }
 
+  changeTheme(theme: string, colorScheme: string) {
+    this.appComponent.changeTheme(theme, colorScheme);
+  }
 }
