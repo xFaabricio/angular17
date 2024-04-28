@@ -21,7 +21,12 @@
 }
 
 [data-bs-theme="light"] :host ::ng-deep section {
-    background: linear-gradient(to right, rgb(245 248 255 / 80%), rgba(0, 0, 255, 0));
+  background-image: 
+  linear-gradient(to right, rgb(245 248 255 / 80%), rgba(0, 0, 255, 0)),
+  radial-gradient(circle, rgb(0 103 128 / 80%) 0%, rgb(0 128 52 / 50%) 30%, transparent 60%);
+  background-position: center, center;
+  background-size: auto, cover;
+  background-repeat: no-repeat;
 }
 
 [data-bs-theme="dark"] :host ::ng-deep section {
