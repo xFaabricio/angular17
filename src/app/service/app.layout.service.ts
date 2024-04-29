@@ -119,21 +119,27 @@ export class LayoutService {
 
     changeTheme() {
         const config = this.config();
-        const themeLink = <HTMLLinkElement>document.getElementById('theme-css');
-        const themeLinkHref = themeLink.getAttribute('href')!;
-        const newHref = themeLinkHref
-            .split('/')
-            .map((el) =>
-                el == this._config.theme
-                    ? (el = config.theme)
-                    : el == `theme-${this._config.colorScheme}`
-                    ? (el = `theme-${config.colorScheme}`)
-                    : el
-            )
-            .join('/');
-
-        this.replaceThemeLink(newHref);
+        if (typeof window !== 'undefined') {            
+            const newHref = "assets/layout/styles/theme/" + config.theme + "/theme.css";
+            this.replaceThemeLink(newHref);
+            this.updateElement(config.theme, config.colorScheme);
+        }
     }
+
+    updateElement(themeValue: string, colorSchemeValue: string): void {
+        if(themeValue === 'bootstrap4-dark-blue'){
+            if (typeof window !== 'undefined') {
+            const element = document.body as HTMLElement;
+            element.dataset['bsTheme'] = 'nav-dark';
+            }
+        }else{
+            if (typeof window !== 'undefined') {
+            const element = document.body as HTMLElement;
+            element.dataset['bsTheme'] = colorSchemeValue;
+            }
+        }
+    }
+
     replaceThemeLink(href: string) {
         const id = 'theme-css';
         let themeLink = <HTMLLinkElement>document.getElementById(id);

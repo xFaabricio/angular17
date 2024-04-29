@@ -26,9 +26,9 @@ export class AppComponent {
       return this.layoutService.config().theme;
   }
 
-  changeTheme(theme: string, colorScheme: string) {
-    this.theme = theme;
-    this.colorScheme = colorScheme;
+  changeTheme(themeToChange: string, colorSchemeToChange: string) {
+    this.theme = themeToChange;
+    this.colorScheme = colorSchemeToChange;    
   }
 
   set colorScheme(val: string) {
