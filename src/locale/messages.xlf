@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
   <file source-language="pt-BR" datatype="plaintext" original="ng2.template">
-    <body>
+    <body>      
       <trans-unit id="6333053818705726495" datatype="html">
         <source>Principal</source>
         <context-group purpose="location">
@@ -34,6 +34,20 @@
           <context context-type="linenumber">36,37</context>
         </context-group>
       </trans-unit>
+      <trans-unit id="5116410756036675429" datatype="html">
+        <source>Logar</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home-content/home-content.component.html</context>
+          <context context-type="linenumber">54,55</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7903261741904285804" datatype="html">
+        <source>Cadastrar</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home-content/home-content.component.html</context>
+          <context context-type="linenumber">55,56</context>
+        </context-group>
+      </trans-unit>
       <trans-unit id="2622329621626499799" datatype="html">
         <source>Controle de Dados</source>
         <context-group purpose="location">
@@ -53,6 +67,17 @@
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home-content/home-content.component.html</context>
           <context context-type="linenumber">64,65</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8372969768893563842" datatype="html">
+        <source>Começar</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home-content/home-content.component.html</context>
+          <context context-type="linenumber">65,66</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home-content/home-content.component.html</context>
+          <context context-type="linenumber">319,320</context>
         </context-group>
       </trans-unit>
       <trans-unit id="3456817455670021779" datatype="html">
@@ -346,13 +371,6 @@
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home-content/home-content.component.html</context>
           <context context-type="linenumber">318,319</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="8372969768893563842" datatype="html">
-        <source>Começar</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/home-content/home-content.component.html</context>
-          <context context-type="linenumber">319,320</context>
         </context-group>
       </trans-unit>
       <trans-unit id="2466155654404596127" datatype="html">

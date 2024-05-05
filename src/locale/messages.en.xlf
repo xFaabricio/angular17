@@ -38,6 +38,22 @@
           <context context-type="linenumber">36,37</context>
         </context-group>
       </trans-unit>
+      <trans-unit id="5116410756036675429" datatype="html">
+        <source>Logar</source>
+        <target>Login</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home-content/home-content.component.html</context>
+          <context context-type="linenumber">54,55</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7903261741904285804" datatype="html">
+        <source>Cadastrar</source>
+        <target>Sign In</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home-content/home-content.component.html</context>
+          <context context-type="linenumber">55,56</context>
+        </context-group>
+      </trans-unit>
       <trans-unit id="2622329621626499799" datatype="html">
         <source>Controle de Dados</source>
         <target>Data Control</target>
@@ -412,6 +428,10 @@
       <trans-unit id="8372969768893563842" datatype="html">
         <source>Começar</source>
         <target>Get Started</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home-content/home-content.component.html</context>
+          <context context-type="linenumber">65,66</context>
+        </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home-content/home-content.component.html</context>
           <context context-type="linenumber">319,320</context>
