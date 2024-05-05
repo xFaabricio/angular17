@@ -1,7 +1,7 @@
 <div class="surface-0 flex justify-content-center">
     <div id="home" class="landing-wrapper overflow-hidden">
         <div class="py-4 px-4 mx-0 md:mx-6 lg:mx-8 lg:px-8 flex align-items-center justify-content-between relative lg:static mb-3">
-            <a class="flex align-items-center logo" href="#">                
+            <a class="flex align-items-center logo" href="#">
             </a>
             <div id="dig-flags-900">
                 <a href="/pt-BR" class="flag" id="dropdown-ptBR">
@@ -51,7 +51,7 @@
                     <fa-icon [icon]="faSun" class="fa-2x" style="margin-right: 1.5rem;" (click)="changeTheme('mdc-light-indigo', 'light')"></fa-icon>
                     <fa-icon [icon]="faCloudMoon" class="fa-2x" style="margin-right: 1.5rem;" (click)="changeTheme('bootstrap4-dark-blue', 'dark')"></fa-icon>
                     <fa-icon [icon]="faMoon" class="fa-2x" style="margin-right: 1.5rem;" (click)="changeTheme('mdc-dark-indigo', 'dark')"></fa-icon>
-                    <button id="login" pButton pRipple class="p-button-text p-button-rounded border-none font-light line-height-2 text-blue-500" style="border: none !important;background-color: transparent !important;font-weight: 600 !important;color: #3b82f6 !important;" i18n>Logar</button>
+                    <button id="login" pButton pRipple class="p-button-text p-button-rounded border-none font-light line-height-2 text-blue-500" style="border: none !important;background-color: transparent !important;font-weight: 600 !important;color: #3b82f6 !important;" i18n [routerLink]="['/auth/login']">Logar</button>
                     <button pButton pRipple class="p-button-rounded border-none ml-5 font-light line-height-2 bg-blue-500 text-white" style="font-weight: 600 !important;" i18n>Cadastrar</button>
                 </div>
             </div>

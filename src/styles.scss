@@ -31,3 +31,15 @@ $gutter: 1rem; //for primeflex grid system
 @import "assets/layout/styles/flags/flags.css";
 @import "assets/layout/styles/badges.scss";
 @import "assets/layout/styles/code.scss";
+
+[data-bs-theme="dark"] :host ::ng-deep .logo {
+    background-image: url('assets/images/logo-dark.svg');    
+}
+
+[data-bs-theme="nav-dark"] :host ::ng-deep .logo {
+    background-image: url('assets/images/logo-dark-1.svg');
+}
+
+[data-bs-theme="light"] :host ::ng-deep .logo {
+    background-image: url('assets/images/logo.svg');
+}

@@ -10,6 +10,7 @@ import { faSun } from '@fortawesome/free-solid-svg-icons';
 import { faCloudMoon } from '@fortawesome/free-solid-svg-icons';
 import { faMoon } from '@fortawesome/free-solid-svg-icons';
 import { CookieService } from 'ngx-cookie-service';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-home-content',
@@ -19,7 +20,8 @@ import { CookieService } from 'ngx-cookie-service';
             PanelModule,
             ButtonModule,
             CommonModule,
-            FontAwesomeModule],
+            FontAwesomeModule,
+            RouterModule],
   templateUrl: './home-content.component.html',
   styleUrl: './home-content.component.scss'
 })
