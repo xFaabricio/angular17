@@ -30,7 +30,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 ## NOTES
 
 1. O preview do markdown é CTRL + SHIFT + V
-2. Localmente o ng serve roda apenas a lingua principal, para subir todas linguas é necessário usar o serve, http-server ou similares
-3. Para buildar para subir no vercel todas linguas, usar o ng build --localize
-4. tree /f /a para ver a arvore de estrutura e arquivos
-5. Gerar a internacionalização ng extract-i18n --output-path src/locale/
+2. Gerar a internacionalização ng extract-i18n --output-path src/locale/
+3. Localmente o ng serve roda apenas a lingua principal, para subir todas linguas é necessário usar o serve, http-server ou similares
+4. Para buildar para subir no vercel todas linguas, usar o ng build --localize
+5. tree /f /a para ver a arvore de estrutura e arquivos

@@ -1,107 +1,497 @@
-<?xml version="1.0" encoding="UTF-8" ?>
+<?xml version="1.0" encoding="UTF-8"?>
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
   <file source-language="pt-BR" datatype="plaintext" original="ng2.template">
-    <body>      
-      <trans-unit id="565269388364671705" datatype="html">
-        <source>Olá, <x id="INTERPOLATION" equiv-text="{{ title }}"/></source>
-        <target>Hello, <x id="INTERPOLATION" equiv-text="{{ title }}"/></target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/app.component.html</context>
-          <context context-type="linenumber">228,229</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="3257853553062138245" datatype="html">
-        <source>Parabéns! Seu aplicativo está em execução. 🎉</source>
-        <target>Congratulations! Your app is running. 🎉</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/app.component.html</context>
-          <context context-type="linenumber">229,230</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="1241805902089778333" datatype="html">
-        <source>Explore os documentos</source>
-        <target>Explore the Docs</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/app.component.html</context>
-          <context context-type="linenumber">237,238</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="3955352176238841415" datatype="html">
-        <source>Aprenda com tutoriais</source>
-        <target>Learn with Tutorials</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/app.component.html</context>
-          <context context-type="linenumber">243,244</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="1710495878683112628" datatype="html">
-        <source>Angular serviço de idiomas</source>
-        <target>Angular Language Service</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/app.component.html</context>
-          <context context-type="linenumber">255,256</context>
-        </context-group>
-      </trans-unit>
+    <body>
       <trans-unit id="6333053818705726495" datatype="html">
         <source>Principal</source>
         <target>Home</target>
         <context-group purpose="location">
-          <context context-type="sourcefile">src/app/header/header.component.html</context>
-          <context context-type="linenumber">6,7</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/header/header.component.html</context>
-          <context context-type="linenumber">29,30</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="5489968893403305908" datatype="html">
-        <source>Sobre</source>
-        <target>About</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/header/header.component.html</context>
-          <context context-type="linenumber">7,8</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/header/header.component.html</context>
-          <context context-type="linenumber">32,33</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="5373999042051591619" datatype="html">
-        <source>Habilidades</source>
-        <target>Skills</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/header/header.component.html</context>
-          <context context-type="linenumber">8,9</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/header/header.component.html</context>
-          <context context-type="linenumber">35,36</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="1236061678414703716" datatype="html">
-        <source>Contato</source>
-        <target>Contact</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/header/header.component.html</context>
-          <context context-type="linenumber">9,10</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/header/header.component.html</context>
-          <context context-type="linenumber">38,39</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="600376029726528115" datatype="html">
-        <source>Entrar</source>
-        <target>Sign In</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/header/header.component.html</context>
+          <context context-type="sourcefile">src/app/home-content/home-content.component.html</context>
           <context context-type="linenumber">21,22</context>
         </context-group>
+      </trans-unit>
+      <trans-unit id="5951646936429434686" datatype="html">
+        <source>Novidades</source>
+        <target>News</target>
         <context-group purpose="location">
-          <context context-type="sourcefile">src/app/header/header.component.html</context>
-          <context context-type="linenumber">58,59</context>
+          <context context-type="sourcefile">src/app/home-content/home-content.component.html</context>
+          <context context-type="linenumber">26</context>
         </context-group>
-      </trans-unit>      
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home-content/home-content.component.html</context>
+          <context context-type="linenumber">312,313</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8047548775053967855" datatype="html">
+        <source>Destaques</source>
+        <target>Highlights</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home-content/home-content.component.html</context>
+          <context context-type="linenumber">31,32</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7126099325350711699" datatype="html">
+        <source>Preços</source>
+        <target>Prices</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home-content/home-content.component.html</context>
+          <context context-type="linenumber">36,37</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2622329621626499799" datatype="html">
+        <source>Controle de Dados</source>
+        <target>Data Control</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home-content/home-content.component.html</context>
+          <context context-type="linenumber">63</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7300742467810341973" datatype="html">
+        <source>Gerenciamento e automação</source>
+        <target>Management and Automation</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home-content/home-content.component.html</context>
+          <context context-type="linenumber">63</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8334941677175288219" datatype="html">
+        <source>Introduzindo uma nova era de resolução de problemas, correções essenciais sem a
+          necessidade de acionar chamados. <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;" />
+          Sem burocracia e sem complicações, otimização de tempo e aumento da eficiência
+          operacional. <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;" /> Chegou a hora de
+          simplificar e agilizar o processo de resolução de problemas, colocando o controle
+          diretamente nas mãos daqueles que melhor entendem suas necessidades. </source>
+        <target>Introducing a new era of problem-solving, essential fixes without the need to
+          trigger tickets. <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;" /> No bureaucracy
+          and no complications, time optimization, and increased operational efficiency. <x
+            id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;" /> It's time to simplify and speed up
+          the problem-solving process, putting control directly into the hands of those who best
+          understand their needs. </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home-content/home-content.component.html</context>
+          <context context-type="linenumber">64,65</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3456817455670021779" datatype="html">
+        <source>Recursos Maravilhosos</source>
+        <target>Wonderful Resources</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home-content/home-content.component.html</context>
+          <context context-type="linenumber">75,76</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5132963078675302541" datatype="html">
+        <source>Recursos incríveis à sua disposição...</source>
+        <target>Amazing resources at your disposal...</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home-content/home-content.component.html</context>
+          <context context-type="linenumber">76,77</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1761213614952457223" datatype="html">
+        <source>Fácil de Usar</source>
+        <target>Easy to Use</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home-content/home-content.component.html</context>
+          <context context-type="linenumber">85,86</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7239060019970333379" datatype="html">
+        <source>Simples de aprender e utilizar.</source>
+        <target>Simple to learn and use.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home-content/home-content.component.html</context>
+          <context context-type="linenumber">86,87</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4769335606314256966" datatype="html">
+        <source>Design Inovador</source>
+        <target>Innovative Design</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home-content/home-content.component.html</context>
+          <context context-type="linenumber">97,98</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3627600571515911456" datatype="html">
+        <source>Sempre atualizado com as últimas tendências.</source>
+        <target>Always up-to-date with the latest trends.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home-content/home-content.component.html</context>
+          <context context-type="linenumber">98,99</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4958555081071884432" datatype="html">
+        <source>Bem Documentado</source>
+        <target>Well Documented</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home-content/home-content.component.html</context>
+          <context context-type="linenumber">109,110</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8847339641461788425" datatype="html">
+        <source>Todas as informações detalhadas estão disponíveis.</source>
+        <target>All detailed information is available.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home-content/home-content.component.html</context>
+          <context context-type="linenumber">110,111</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2318151651652974454" datatype="html">
+        <source>Layout Responsivo</source>
+        <target>Responsive Layout</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home-content/home-content.component.html</context>
+          <context context-type="linenumber">121,122</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home-content/home-content.component.html</context>
+          <context context-type="linenumber">218,219</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home-content/home-content.component.html</context>
+          <context context-type="linenumber">249,250</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home-content/home-content.component.html</context>
+          <context context-type="linenumber">280,281</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7264724957729181108" datatype="html">
+        <source>Se adapta a todos os dispositivos e tamanhos de tela.</source>
+        <target>Adapts to all devices and screen sizes.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home-content/home-content.component.html</context>
+          <context context-type="linenumber">122,123</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6852962273171638851" datatype="html">
+        <source>Código Limpo</source>
+        <target>Clean Code</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home-content/home-content.component.html</context>
+          <context context-type="linenumber">133,134</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6505454436886585437" datatype="html">
+        <source>Programação organizada e fácil de entender.</source>
+        <target>Organized and easy-to-understand programming.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home-content/home-content.component.html</context>
+          <context context-type="linenumber">134,135</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2402402860172462832" datatype="html">
+        <source>Modo Escuro</source>
+        <target>Dark Mode</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home-content/home-content.component.html</context>
+          <context context-type="linenumber">145,146</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7286553533790863811" datatype="html">
+        <source>Uma opção confortável para ambientes de pouca luz.</source>
+        <target>A comfortable option for low-light environments.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home-content/home-content.component.html</context>
+          <context context-type="linenumber">146,147</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6194622932562860850" datatype="html">
+        <source>Pronto para Uso</source>
+        <target>Ready to Use</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home-content/home-content.component.html</context>
+          <context context-type="linenumber">157,158</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3728795246408877768" datatype="html">
+        <source>Facilidade de implementação imediata.</source>
+        <target>Immediate implementation ease.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home-content/home-content.component.html</context>
+          <context context-type="linenumber">158,159</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4867140881553325852" datatype="html">
+        <source>Práticas Modernas</source>
+        <target>Modern Practices</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home-content/home-content.component.html</context>
+          <context context-type="linenumber">169,170</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1298393615001955257" datatype="html">
+        <source>Seguindo padrões e tendências atuais.</source>
+        <target>Following current standards and trends.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home-content/home-content.component.html</context>
+          <context context-type="linenumber">170,171</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="334697507462663584" datatype="html">
+        <source>Privacidade</source>
+        <target>Privacy</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home-content/home-content.component.html</context>
+          <context context-type="linenumber">181,182</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="829145504103378308" datatype="html">
+        <source>Garantindo a confidencialidade dos dados.</source>
+        <target>Ensuring data confidentiality.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home-content/home-content.component.html</context>
+          <context context-type="linenumber">182,183</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6731671485567713324" datatype="html">
+        <source>Interativa Máxima</source>
+        <target>Maximum Interactivity</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home-content/home-content.component.html</context>
+          <context context-type="linenumber">190,191</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5671025547252633701" datatype="html">
+        <source>&quot;Estamos muito satisfeitos com o desempenho deste sistema. Ele simplificou
+          muitos processos em nossa empresa e aumentou significativamente nossa eficiência
+          operacional. Além disso, a equipe por trás do sistema é excepcionalmente prestativa e
+          sempre pronta para resolver quaisquer problemas que surjam. Não poderíamos estar mais
+          felizes com nossa escolha e recomendamos este sistema a todas as empresas que procuram
+          melhorar sua produtividade e eficácia.&quot;</source>
+        <target>&quot;We are very pleased with the performance of this system. It has streamlined
+          many processes in our company and significantly increased our operational efficiency.
+          Additionally, the team behind the system is exceptionally helpful and always ready to
+          address any issues that arise. We couldn't be happier with our choice and recommend this
+          system to all companies looking to enhance their productivity and effectiveness.&quot;</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home-content/home-content.component.html</context>
+          <context context-type="linenumber">191,192</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4896402470673030879" datatype="html">
+        <source>Preços Imbatíveis</source>
+        <target>Unbeatable Prices</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home-content/home-content.component.html</context>
+          <context context-type="linenumber">200,201</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7297856906922091366" datatype="html">
+        <source>Conheça os planos e suas diferenças</source>
+        <target>Learn about the plans and their differences</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home-content/home-content.component.html</context>
+          <context context-type="linenumber">201,202</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6923277427499940897" datatype="html">
+        <source>Grátis</source>
+        <target>Free</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home-content/home-content.component.html</context>
+          <context context-type="linenumber">207,208</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6279774482666135661" datatype="html">
+        <source>por mês</source>
+        <target>per month</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home-content/home-content.component.html</context>
+          <context context-type="linenumber">211,212</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home-content/home-content.component.html</context>
+          <context context-type="linenumber">242,243</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home-content/home-content.component.html</context>
+          <context context-type="linenumber">273,274</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3560179053033728023" datatype="html">
+        <source>Mensagens Push Ilimitadas</source>
+        <target>Unlimited Push Messages</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home-content/home-content.component.html</context>
+          <context context-type="linenumber">222,223</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home-content/home-content.component.html</context>
+          <context context-type="linenumber">253,254</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home-content/home-content.component.html</context>
+          <context context-type="linenumber">284,285</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5429399506578472083" datatype="html">
+        <source>50 Tickets de Suporte</source>
+        <target>50 Support Tickets</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home-content/home-content.component.html</context>
+          <context context-type="linenumber">226,227</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home-content/home-content.component.html</context>
+          <context context-type="linenumber">257,258</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home-content/home-content.component.html</context>
+          <context context-type="linenumber">288,289</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="950233955446968722" datatype="html">
+        <source>Frete Grátis</source>
+        <target>Free Shipping</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home-content/home-content.component.html</context>
+          <context context-type="linenumber">230,231</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home-content/home-content.component.html</context>
+          <context context-type="linenumber">261,262</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home-content/home-content.component.html</context>
+          <context context-type="linenumber">292,293</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4772312054789061602" datatype="html">
+        <source>Inicial</source>
+        <target>Home</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home-content/home-content.component.html</context>
+          <context context-type="linenumber">238,239</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1456727077432700741" datatype="html">
+        <source>Empresa</source>
+        <target>Company</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home-content/home-content.component.html</context>
+          <context context-type="linenumber">269,270</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home-content/home-content.component.html</context>
+          <context context-type="linenumber">310,311</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3048587586224271961" datatype="html">
+        <source>Sobre nós</source>
+        <target>About us</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home-content/home-content.component.html</context>
+          <context context-type="linenumber">311,312</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4569556888477798486" datatype="html">
+        <source>Investidores</source>
+        <target>Investors</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home-content/home-content.component.html</context>
+          <context context-type="linenumber">313,314</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4437180677347686724" datatype="html">
+        <source>Carreiras</source>
+        <target>Careers</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home-content/home-content.component.html</context>
+          <context context-type="linenumber">314</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="416468527677369121" datatype="html">
+        <source>Recursos</source>
+        <target>Resources</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home-content/home-content.component.html</context>
+          <context context-type="linenumber">318,319</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8372969768893563842" datatype="html">
+        <source>Começar</source>
+        <target>Get Started</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home-content/home-content.component.html</context>
+          <context context-type="linenumber">319,320</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2466155654404596127" datatype="html">
+        <source>Aprender</source>
+        <target>Learn</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home-content/home-content.component.html</context>
+          <context context-type="linenumber">320,321</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7243891045282078137" datatype="html">
+        <source>Estudo de casos</source>
+        <target>Case Studies</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home-content/home-content.component.html</context>
+          <context context-type="linenumber">321,322</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2316790814318437569" datatype="html">
+        <source>Comunidade</source>
+        <target>Community</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home-content/home-content.component.html</context>
+          <context context-type="linenumber">325,326</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3400027835914346369" datatype="html">
+        <source>Discord</source>
+        <target>Discord</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home-content/home-content.component.html</context>
+          <context context-type="linenumber">326,327</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6265595218413789258" datatype="html">
+        <source>Eventos<x id="TAG_IMG" ctype="image"
+            equiv-text="&lt;img src=&quot;https://sakai.primeng.org/assets/demo/images/landing/new-badge.svg&quot; class=&quot;ml-2&quot;/&gt;" /></source>
+        <target>Events <x id="TAG_IMG"
+            equiv-text="&lt;img src=&quot;https://sakai.primeng.org/assets/demo/images/landing/new-badge.svg&quot; class=&quot;ml-2&quot;/&gt;" /></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home-content/home-content.component.html</context>
+          <context context-type="linenumber">327,328</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7814069298939347422" datatype="html">
+        <source>Legal</source>
+        <target>Legal</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home-content/home-content.component.html</context>
+          <context context-type="linenumber">333,334</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7760847573218991188" datatype="html">
+        <source>Política da marca</source>
+        <target>Brand Policy</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home-content/home-content.component.html</context>
+          <context context-type="linenumber">334,335</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="9109995455623034716" datatype="html">
+        <source>Política de privacidade</source>
+        <target>Privacy Policy</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home-content/home-content.component.html</context>
+          <context context-type="linenumber">335,336</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="12817330835616928" datatype="html">
+        <source>Termos de uso e serviços</source>
+        <target>Terms of Use and Services</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home-content/home-content.component.html</context>
+          <context context-type="linenumber">336,337</context>
+        </context-group>
+      </trans-unit>
+
     </body>
   </file>
 </xliff>
