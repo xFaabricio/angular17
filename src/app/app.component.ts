@@ -12,7 +12,7 @@ import { LayoutService } from './service/app.layout.service';
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
-  title = 'SevenHeads Project';
+  title = 'SevenHeads Project';  
 
   constructor(public layoutService: LayoutService){ }
 
@@ -28,7 +28,7 @@ export class AppComponent {
 
   changeTheme(themeToChange: string, colorSchemeToChange: string) {
     this.theme = themeToChange;
-    this.colorScheme = colorSchemeToChange;    
+    this.colorScheme = colorSchemeToChange;
   }
 
   set colorScheme(val: string) {

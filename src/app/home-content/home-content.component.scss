@@ -11,24 +11,6 @@
     margin-top: 20px;
 }
 
-.flag {
-    background: none;
-    margin-left: 1.5rem !important;
-    margin-top: 2px !important;
-}
-
-[data-bs-theme="dark"] :host ::ng-deep .logo {
-    background-image: url('../../assets/images/logo-dark.svg');
-}
-
-[data-bs-theme="nav-dark"] :host ::ng-deep .logo {
-    background-image: url('../../assets/images/logo-dark-1.svg');
-}
-
-[data-bs-theme="light"] :host ::ng-deep .logo {
-    background-image: url('../../assets/images/logo.svg');
-}
-
 @media screen and (max-width: 990px) {
     #dropdown-ptBR-li, #dropdown-enUS-li {
         display: none;

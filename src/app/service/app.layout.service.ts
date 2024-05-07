@@ -8,6 +8,7 @@ export interface AppConfig {
     ripple: boolean;
     menuMode: string;
     scale: number;
+    imageName: string;
 }
 
 interface LayoutState {
@@ -30,6 +31,7 @@ export class LayoutService {
         colorScheme: 'light',
         theme: 'lara-light-indigo',
         scale: 14,
+        imageName: 'logo.svg'
     };
 
     config = signal<AppConfig>(this._config);
@@ -123,6 +125,14 @@ export class LayoutService {
             const newHref = "assets/layout/styles/theme/" + config.theme + "/theme.css";
             this.replaceThemeLink(newHref);
             this.updateElement(config.theme, config.colorScheme);
+            
+            if(config.theme === 'mdc-dark-indigo'){
+                config.imageName = 'logo-dark.svg';
+            }else if(config.theme === 'bootstrap4-dark-blue'){
+                config.imageName = 'logo-dark-1.svg';
+            }else {
+                config.imageName = 'logo.svg';
+            }
         }
     }
 

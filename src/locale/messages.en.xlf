@@ -68,9 +68,12 @@
         <target>Username</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/auth/login/login.component.html</context>
+          <context context-type="linenumber">12,13</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/auth/login/login.component.html</context>
           <context context-type="linenumber">13</context>
         </context-group>
-        <note priority="1" from="description">Usuário</note>
       </trans-unit>
       <trans-unit id="150555469217751648" datatype="html">
         <source>Senha</source>
