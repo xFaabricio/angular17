@@ -5,6 +5,7 @@ import { faMoon } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { CookieService } from 'ngx-cookie-service';
 import { AppComponent } from '../app.component';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-simple-header',
@@ -22,7 +23,7 @@ export class SimpleHeaderComponent {
   colorScheme: string = 'light';
   theme: string = 'mdc-light-indigo';
 
-  constructor(public appComponent: AppComponent,private cookieService: CookieService, private renderer: Renderer2, private el: ElementRef) {       
+  constructor(public appComponent: AppComponent,private cookieService: CookieService, private renderer: Renderer2, private el: ElementRef, private router: Router) {       
     if (this.cookieService.check('colorScheme')) {
       if(this.cookieService.get('colorScheme') === 'light') {        
         this.appComponent.changeTheme('mdc-light-indigo', 'light');        
@@ -46,4 +47,10 @@ export class SimpleHeaderComponent {
     this.appComponent.changeTheme(this.theme, this.colorScheme);    
   }
   
+  redirectToLanguage(language: string) {    
+    const currentUrl = this.router.url;    
+    const currentPrefix = currentUrl.split('/')[1];
+    const newUrl = `/${language}${currentUrl.substring(currentPrefix.length + 1)}`;
+    this.router.navigateByUrl(newUrl);
+  }
 }
