@@ -23,7 +23,7 @@ export class SimpleHeaderComponent {
   colorScheme: string = 'light';
   theme: string = 'mdc-light-indigo';
 
-  constructor(public appComponent: AppComponent,private cookieService: CookieService, private renderer: Renderer2, private el: ElementRef, private router: Router, private location: Location) {
+  constructor(public appComponent: AppComponent,private cookieService: CookieService, private renderer: Renderer2, private el: ElementRef, private router: Router) {       
     if (this.cookieService.check('colorScheme')) {
       if(this.cookieService.get('colorScheme') === 'light') {        
         this.appComponent.changeTheme('mdc-light-indigo', 'light');        
@@ -48,7 +48,7 @@ export class SimpleHeaderComponent {
   }
   
   redirectToLanguage(language: string) {    
-    const newUrl = this.location.host + `/${language}` + this.router.url;    
+    const newUrl = `/${language}` + this.router.url;
     this.router.navigateByUrl(newUrl);
   }
 }
