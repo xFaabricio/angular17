@@ -48,7 +48,8 @@ export class SimpleHeaderComponent {
   }
   
   redirectToLanguage(language: string) {    
-    const newUrl = `/${language}` + this.router.url;    
+    const newUrl = `/${language}` + this.router.url;
+    console.log(newUrl);
     this.router.navigateByUrl(newUrl);
   }
 }
