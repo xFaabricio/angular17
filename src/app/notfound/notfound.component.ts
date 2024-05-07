@@ -1,19 +1,17 @@
 import { Component, ElementRef } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { ButtonModule } from 'primeng/button';
 import { RouterModule } from '@angular/router';
 
 @Component({
-  selector: 'app-access',
+  selector: 'app-notfound',
   standalone: true,
-  imports: [RouterModule, ButtonModule, CommonModule],
-  templateUrl: './access.component.html',
-  styleUrl: './access.component.scss'
+  imports: [RouterModule],
+  templateUrl: './notfound.component.html',
+  styleUrl: './notfound.component.scss'
 })
-export class AccessComponent {
+export class NotfoundComponent {
 
   imageName: string = "";
-  
+
   constructor(public el: ElementRef) { 
     const darkThemeElement = this.el.nativeElement.querySelector('[data-bs-theme="dark"]');
     const lightThemeElement = this.el.nativeElement.querySelector('[data-bs-theme="light"]');
@@ -27,5 +25,4 @@ export class AccessComponent {
       this.imageName = "logo.svg";
     }
   }
-
 }

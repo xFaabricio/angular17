@@ -1,7 +1,106 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
   <file source-language="pt-BR" datatype="plaintext" original="ng2.template">
-    <body>      
+    <body>
+      <trans-unit id="5269207010606593005" datatype="html">
+        <source>Acesso negado</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/auth/access/access.component.html</context>
+          <context context-type="linenumber">10,11</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6067579068230670833" datatype="html">
+        <source>Você não tem as permissões necessárias. <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/> Entre em contato com os administradores.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/auth/access/access.component.html</context>
+          <context context-type="linenumber">11,12</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="697002394273316776" datatype="html">
+        <source>Voltar para tela principal</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/auth/access/access.component.html</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/auth/error/error.component.html</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+        <note priority="1" from="description">Voltar para tela principal</note>
+      </trans-unit>
+      <trans-unit id="2598743939320267689" datatype="html">
+        <source>Ocorreu um erro</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/auth/error/error.component.html</context>
+          <context context-type="linenumber">10,11</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8336572499350261807" datatype="html">
+        <source>Requisição falhou</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/auth/error/error.component.html</context>
+          <context context-type="linenumber">11,12</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3939608091630232900" datatype="html">
+        <source>Bem-vindo !</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/auth/login/login.component.html</context>
+          <context context-type="linenumber">7,8</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7853461593425324722" datatype="html">
+        <source>Faça login para continuar</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/auth/login/login.component.html</context>
+          <context context-type="linenumber">8,9</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4785801357911424772" datatype="html">
+        <source>Usuário</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/auth/login/login.component.html</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+        <note priority="1" from="description">Usuário</note>
+      </trans-unit>
+      <trans-unit id="150555469217751648" datatype="html">
+        <source>Senha</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/auth/login/login.component.html</context>
+          <context context-type="linenumber">15,16</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/auth/login/login.component.html</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8211447464249744682" datatype="html">
+        <source>Lembrar-me</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/auth/login/login.component.html</context>
+          <context context-type="linenumber">21,22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6167262181639915125" datatype="html">
+        <source>Esqueci a senha</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/auth/login/login.component.html</context>
+          <context context-type="linenumber">23,24</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5116410756036675429" datatype="html">
+        <source>Logar</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/auth/login/login.component.html</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home-content/home-content.component.html</context>
+          <context context-type="linenumber">54,55</context>
+        </context-group>
+        <note priority="1" from="description">Logar</note>
+      </trans-unit>
       <trans-unit id="6333053818705726495" datatype="html">
         <source>Principal</source>
         <context-group purpose="location">
@@ -32,13 +131,6 @@
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home-content/home-content.component.html</context>
           <context context-type="linenumber">36,37</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="5116410756036675429" datatype="html">
-        <source>Logar</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/home-content/home-content.component.html</context>
-          <context context-type="linenumber">54,55</context>
         </context-group>
       </trans-unit>
       <trans-unit id="7903261741904285804" datatype="html">
