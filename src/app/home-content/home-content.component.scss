@@ -11,13 +11,54 @@
     margin-top: 20px;
 }
 
-@media screen and (max-width: 990px) {
+.imgLogo {
+    width: 17rem !important;
+    height: 5rem !important;
+}
+
+#flagImage-enUS, #flagImage-ptBR  {
+    width: 61px;
+    height: 35px;
+}
+
+#sunIcon, #moonIcon, #cloudMoonIcon {
+    margin-right: 1.5rem;
+}
+
+@media screen and (max-width: 425px) {
+    #flagImage-enUS, #flagImage-ptBR {
+        width: 45px;
+        height: 25px;
+    }
+
+    .imgLogo {
+        width: 14rem !important;
+        height: 4rem !important;
+        margin-bottom: 0px !important;
+    }
+
+    .flag {
+        margin-left: 10px !important;
+    }
+
+    #sunIcon, #moonIcon, #cloudMoonIcon {
+        margin-right: 10px !important;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    #hero {
+        padding-left: 0px !important
+    }
+}
+
+@media screen and (max-width: 991px) {
     #dropdown-ptBR-li, #dropdown-enUS-li {
         display: none;
     }
 }
 
-@media screen and (min-width: 990px) {
+@media screen and (min-width: 992px) {
     #dig-flags-900 {
         display: none;
     }

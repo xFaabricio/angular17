@@ -2,22 +2,22 @@
     <div id="home" class="landing-wrapper overflow-hidden">
         <div class="py-4 px-4 mx-0 md:mx-6 lg:mx-8 lg:px-8 flex align-items-center justify-content-between relative lg:static mb-3">
             <a class="flex align-items-center" href="#">
-                <img src="assets/images/{{appComponent.layoutService.config().imageName}}" class="mb-5 w-6rem flex-shrink-0 img" style="width: 17rem !important;height: 5rem !important;">
+                <img src="assets/images/{{appComponent.layoutService.config().imageName}}" class="mb-5 w-6rem flex-shrink-0 imgLogo">
             </a>
             <div id="dig-flags-900">
                 <a href="/pt-BR" class="flag" id="dropdown-ptBR">
-                    <img src="https://www.curitiba.pr.leg.br/atividade-parlamentar/legislacao/imagens/bandeira-do-brasil.png" width="61" height="35">
+                    <img src="https://www.curitiba.pr.leg.br/atividade-parlamentar/legislacao/imagens/bandeira-do-brasil.png" id="flagImage-ptBR">
                 </a>
                 <a href="/en-US" class="flag" id="dropdown-enUS" style="margin-right: 10px;">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/d/de/Flag_of_the_United_States.png" width="61" height="35">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/d/de/Flag_of_the_United_States.png" id="flagImage-enUS">
                 </a>
             </div>
             <a pRipple class="cursor-pointer block lg:hidden text-700" pStyleClass="@next" enterClass="hidden" leaveToClass="hidden">            
                 <i class="pi pi-bars text-4xl"></i>                
             </a>            
-            <div class="align-items-center surface-0 flex-grow-1 justify-content-between hidden lg:flex absolute lg:static w-full left-0 px-6 lg:px-0 z-2" style="top:120px">
+            <div class="align-items-center surface-0 flex-grow-1 justify-content-between hidden lg:flex absolute lg:static w-full left-0 px-4 lg:px-0 z-2" style="top:120px">
                 <ul class="list-none p-0 m-0 flex lg:align-items-center select-none flex-column lg:flex-row cursor-pointer">
-                    <li>
+                    <li id="li-Principal">
                         <a pRipple class="flex m-0 md:ml-5 px-0 py-3 text-900 font-medium line-height-3">
                            <span i18n>Principal</span>
                         </a>
@@ -49,11 +49,11 @@
                     </li>
                 </ul>
                 <div class="flex justify-content-between lg:block border-top-1 lg:border-top-none surface-border py-3 lg:py-0 mt-3 lg:mt-0" style="display: flex !important;">
-                    <fa-icon [icon]="faSun" class="fa-2x" style="margin-right: 1.5rem;" (click)="changeTheme('mdc-light-indigo', 'light')"></fa-icon>
-                    <fa-icon [icon]="faCloudMoon" class="fa-2x" style="margin-right: 1.5rem;" (click)="changeTheme('bootstrap4-dark-blue', 'dark')"></fa-icon>
-                    <fa-icon [icon]="faMoon" class="fa-2x" style="margin-right: 1.5rem;" (click)="changeTheme('mdc-dark-indigo', 'dark')"></fa-icon>
+                    <fa-icon [icon]="faSun" class="fa-2x" id="sunIcon" (click)="changeTheme('mdc-light-indigo', 'light')"></fa-icon>
+                    <fa-icon [icon]="faCloudMoon" class="fa-2x" id="cloudMoonIcon" (click)="changeTheme('bootstrap4-dark-blue', 'dark')"></fa-icon>
+                    <fa-icon [icon]="faMoon" class="fa-2x" id="moonIcon" (click)="changeTheme('mdc-dark-indigo', 'dark')"></fa-icon>
                     <button id="login" pButton pRipple class="p-button-text p-button-rounded border-none font-light line-height-2 text-blue-500" style="border: none !important;background-color: transparent !important;font-weight: 600 !important;color: #3b82f6 !important;" i18n [routerLink]="['/auth/login']">Logar</button>
-                    <button pButton pRipple class="p-button-rounded border-none ml-5 font-light line-height-2 bg-blue-500 text-white" style="font-weight: 600 !important;" i18n>Cadastrar</button>
+                    <button pButton pRipple class="p-button-rounded border-none font-light line-height-2 bg-blue-500 text-white" style="font-weight: 600 !important;" i18n>Cadastrar</button>
                 </div>
             </div>
         </div>
@@ -301,8 +301,7 @@
         <div class="py-4 px-4 mx-0 mt-8 lg:mx-8">
             <div class="grid justify-content-between">
                 <div class="col-12 md:col-2" style="margin-top:-1.5rem;">
-                    <a class="flex flex-wrap align-items-center justify-content-center md:justify-content-start md:mb-0 mb-3 cursor-pointer logo">                        
-                    </a>                    
+                    <img src="assets/images/{{appComponent.layoutService.config().imageName}}" class="w-6rem flex-shrink-0 img" style="width: 17rem !important;height: 5rem !important;">
                 </div>
     
                 <div class="col-12 md:col-10 lg:col-7">
