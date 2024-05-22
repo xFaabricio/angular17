@@ -94,8 +94,7 @@ export class PrincipalComponent implements OnDestroy {
         }
     }
 
-    unblockBodyScroll(): void {
-      //document undefined
+    unblockBodyScroll(): void {      
       if (document !== undefined){
         if (document.body.classList) {
             document.body.classList.remove('blocked-scroll');

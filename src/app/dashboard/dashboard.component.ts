@@ -1,4 +1,4 @@
-import { Component, OnDestroy, OnInit } from '@angular/core';
+import { Component, ElementRef, OnDestroy, OnInit, Renderer2 } from '@angular/core';
 import { MenuItem } from 'primeng/api';
 import { Subscription, debounceTime } from 'rxjs';
 import { Product } from '../entity/product';
@@ -13,6 +13,8 @@ import { MenuModule } from 'primeng/menu';
 import { TableModule } from 'primeng/table';
 import { PanelMenuModule } from 'primeng/panelmenu';
 import { HttpClientModule } from '@angular/common/http';
+import { CookieService } from 'ngx-cookie-service';
+import { AppComponent } from '../app.component';
 
 @Component({
   selector: 'app-dashboard',
@@ -25,7 +27,8 @@ import { HttpClientModule } from '@angular/common/http';
     StyleClassModule,
     PanelMenuModule,
     ButtonModule,
-    HttpClientModule],
+    HttpClientModule,
+    AppComponent],
   templateUrl: './dashboard.component.html',
   styleUrl: './dashboard.component.scss'
 })
@@ -41,17 +44,30 @@ export class DashboardComponent implements OnInit, OnDestroy {
 
     subscription!: Subscription;
 
-    constructor(public layoutService: LayoutService) {
-        this.subscription = this.layoutService.configUpdate$
+    constructor(public layoutService: LayoutService, public appComponent: AppComponent, private cookieService: CookieService, private renderer: Renderer2, private el: ElementRef, private productService: ProductService) {
+        if (this.cookieService.check('colorScheme')) {
+            if(this.cookieService.get('colorScheme') === 'light') {        
+                this.appComponent.changeTheme('mdc-light-indigo', 'light');        
+            }else if(this.cookieService.get('colorScheme') === 'dark') {
+                if(this.cookieService.get('theme') === 'bootstrap4-dark-blue') {          
+                    this.appComponent.changeTheme('bootstrap4-dark-blue', 'dark');          
+                }else {          
+                    this.appComponent.changeTheme('mdc-dark-indigo', 'dark');          
+                }
+            }
+        } else {      
+            this.appComponent.changeTheme('mdc-light-indigo','light');      
+        }
+        /*this.subscription = this.layoutService.configUpdate$
         .pipe(debounceTime(25))
         .subscribe((config) => {
             this.initChart();
-        });
+        });*/
     }
 
     ngOnInit() {
         this.initChart();
-        //this.productService.getProductsSmall().then(data => this.products = data);
+        this.productService.getProductsSmall().then(data => this.products = data);
 
         this.items = [
             { label: 'Add New', icon: 'pi pi-fw pi-plus' },
