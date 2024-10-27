@@ -84,4 +84,4 @@ Habilidades:
 3. Conhecimento de containers e orquestração (Docker, Kubernetes)
 4. Monitoramento e logging (Prometheus, Grafana, ELK Stack)
 5. Scripts e automação (Bash, Python, Shell scripting)
-6. Conhecimento de serviços em nuvem (AWS, Azure, Google Cloud)
+6. Conhecimento de serviços em nuvem (AWS, Azure, Google Cloud)

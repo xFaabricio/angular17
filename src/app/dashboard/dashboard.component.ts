@@ -15,6 +15,7 @@ import { PanelMenuModule } from 'primeng/panelmenu';
 import { HttpClientModule } from '@angular/common/http';
 import { CookieService } from 'ngx-cookie-service';
 import { AppComponent } from '../app.component';
+import { ChartService } from '../service/chart.service';
 
 @Component({
   selector: 'app-dashboard',
@@ -44,7 +45,7 @@ export class DashboardComponent implements OnInit, OnDestroy {
 
     subscription!: Subscription;
 
-    constructor(public layoutService: LayoutService, public appComponent: AppComponent, private cookieService: CookieService, private renderer: Renderer2, private el: ElementRef, private productService: ProductService) {
+    constructor(public chartService: ChartService, public layoutService: LayoutService, public appComponent: AppComponent, private cookieService: CookieService, private renderer: Renderer2, private el: ElementRef, private productService: ProductService) {
         if (this.cookieService.check('colorScheme')) {
             if(this.cookieService.get('colorScheme') === 'light') {        
                 this.appComponent.changeTheme('mdc-light-indigo', 'light');        
@@ -65,7 +66,7 @@ export class DashboardComponent implements OnInit, OnDestroy {
         });*/
     }
 
-    ngOnInit() {
+    ngOnInit() {        
         this.initChart();
         this.productService.getProductsSmall().then(data => this.products = data);
 
@@ -73,68 +74,68 @@ export class DashboardComponent implements OnInit, OnDestroy {
             { label: 'Add New', icon: 'pi pi-fw pi-plus' },
             { label: 'Remove', icon: 'pi pi-fw pi-minus' }
         ];
-    }
+    }    
 
-    initChart() {
+    async initChart() {        
         if(getComputedStyle !== undefined){
           const documentStyle = getComputedStyle(document.documentElement);
           const textColor = documentStyle.getPropertyValue('--text-color');
           const textColorSecondary = documentStyle.getPropertyValue('--text-color-secondary');
           const surfaceBorder = documentStyle.getPropertyValue('--surface-border');
-
+          
           this.chartData = {
-              labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
-              datasets: [
-                  {
-                      label: 'First Dataset',
-                      data: [65, 59, 80, 81, 56, 55, 40],
-                      fill: false,
-                      backgroundColor: documentStyle.getPropertyValue('--bluegray-700'),
-                      borderColor: documentStyle.getPropertyValue('--bluegray-700'),
-                      tension: .4
-                  },
-                  {
-                      label: 'Second Dataset',
-                      data: [28, 48, 40, 19, 86, 27, 90],
-                      fill: false,
-                      backgroundColor: documentStyle.getPropertyValue('--green-600'),
-                      borderColor: documentStyle.getPropertyValue('--green-600'),
-                      tension: .4
-                  }
-              ]
-          };
-        
+            labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+            datasets: [
+                {
+                    label: 'First Dataset',
+                    data: [65, 59, 80, 81, 56, 55, 40],
+                    fill: false,
+                    backgroundColor: documentStyle.getPropertyValue('--bluegray-700'),
+                    borderColor: documentStyle.getPropertyValue('--bluegray-700'),
+                    tension: .4
+                },
+                {
+                    label: 'Second Dataset',
+                    data: [28, 48, 40, 19, 86, 27, 90],
+                    fill: false,
+                    backgroundColor: documentStyle.getPropertyValue('--green-600'),
+                    borderColor: documentStyle.getPropertyValue('--green-600'),
+                    tension: .4
+                }
+            ]
+        };
 
-          this.chartOptions = {
-              plugins: {
-                  legend: {
-                      labels: {
-                          color: textColor
-                      }
-                  }
-              },
-              scales: {
-                  x: {
-                      ticks: {
-                          color: textColorSecondary
-                      },
-                      grid: {
-                          color: surfaceBorder,
-                          drawBorder: false
-                      }
-                  },
-                  y: {
-                      ticks: {
-                          color: textColorSecondary
-                      },
-                      grid: {
-                          color: surfaceBorder,
-                          drawBorder: false
-                      }
-                  }
-              }
-          };
-        }
+        this.chartOptions = {
+            plugins: {
+                legend: {
+                    labels: {
+                        color: textColor
+                    }
+                }
+            },
+            scales: {
+                x: {
+                    ticks: {
+                        color: textColorSecondary
+                    },
+                    grid: {
+                        color: surfaceBorder,
+                        drawBorder: false
+                    }
+                },
+                y: {
+                    ticks: {
+                        color: textColorSecondary
+                    },
+                    grid: {
+                        color: surfaceBorder,
+                        drawBorder: false
+                    }
+                }
+            }
+        };
+
+        }        
     }
 
     ngOnDestroy() {
