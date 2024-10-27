@@ -1,6 +1,6 @@
 const PROXY_CONFIG = [{
         "context": ["/api-sevenheads"],
-        "target": 'https://msv-sevenheads-c4c1b4c14d87.herokuapp.com/v1/api',
+        "target": 'https://api.sevenheads.com.br/v1/api',
         "secure": false,
         "changeOrigin": true,
         "pathRewrite": { '^/api-sevenheads': '' }
