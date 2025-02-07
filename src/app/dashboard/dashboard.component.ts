@@ -12,7 +12,7 @@ import { ChartModule } from 'primeng/chart';
 import { MenuModule } from 'primeng/menu';
 import { TableModule } from 'primeng/table';
 import { PanelMenuModule } from 'primeng/panelmenu';
-import { HttpClientModule } from '@angular/common/http';
+import {} from '@angular/common/http';
 import { CookieService } from 'ngx-cookie-service';
 import { AppComponent } from '../app.component';
 import { ChartService } from '../service/chart.service';
@@ -28,7 +28,11 @@ import { ChartService } from '../service/chart.service';
     StyleClassModule,
     PanelMenuModule,
     ButtonModule,
-    HttpClientModule,
+    
+// TODO: `HttpClientModule` should not be imported into a component directly.
+// Please refactor the code to add `provideHttpClient()` call to the provider list in the
+// application bootstrap logic and remove the `HttpClientModule` import from this component.
+HttpClientModule,
     AppComponent],
   templateUrl: './dashboard.component.html',
   styleUrl: './dashboard.component.scss'
