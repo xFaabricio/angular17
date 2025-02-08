@@ -34,3 +34,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 3. Localmente o ng serve roda apenas a lingua principal, para subir todas linguas é necessário usar o serve, http-server ou similares
 4. Para buildar para subir no vercel todas linguas, usar o ng build --localize
 5. tree /f /a para ver a arvore de estrutura e arquivos
+
+## RUN
+
+Run with `ng serve --proxy-config proxy.config.js` because was add MSV

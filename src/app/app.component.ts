@@ -1,15 +1,13 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { HomeContentComponent } from './home-content/home-content.component';
 import { LayoutService } from './service/app.layout.service';
 
 @Component({
-  selector: 'app-root',
-  standalone: true,
-  imports: [RouterOutlet, NgbModule, HomeContentComponent],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
+    selector: 'app-root',    
+    imports: [RouterOutlet, NgbModule],
+    templateUrl: './app.component.html',
+    styleUrl: './app.component.scss'
 })
 export class AppComponent {
   title = 'SevenHeads Project';  

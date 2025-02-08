@@ -8,11 +8,10 @@ import { AppComponent } from '../app.component';
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-simple-header',
-  standalone: true,
-  imports: [FontAwesomeModule],
-  templateUrl: './simple-header.component.html',
-  styleUrl: './simple-header.component.scss'
+    selector: 'app-simple-header',
+    imports: [FontAwesomeModule],
+    templateUrl: './simple-header.component.html',
+    styleUrl: './simple-header.component.scss'
 })
 export class SimpleHeaderComponent {
 

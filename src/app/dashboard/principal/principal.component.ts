@@ -11,7 +11,6 @@ import { DashboardComponent } from "../dashboard.component";
 
 @Component({
     selector: 'app-principal',
-    standalone: true,
     templateUrl: './principal.component.html',
     styleUrl: './principal.component.scss',
     imports: [SidebarComponent, TopbarComponent, CommonModule, FooterComponent, RouterOutlet, DashboardComponent]

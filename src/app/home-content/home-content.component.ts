@@ -13,18 +13,17 @@ import { CookieService } from 'ngx-cookie-service';
 import { RouterModule } from '@angular/router';
 
 @Component({
-  selector: 'app-home-content',
-  standalone: true,
-  imports: [DividerModule,
-            StyleClassModule,            
-            PanelModule,
-            ButtonModule,
-            CommonModule,
-            FontAwesomeModule,
-            RouterModule,
-            AppComponent],
-  templateUrl: './home-content.component.html',
-  styleUrl: './home-content.component.scss'
+    selector: 'app-home-content',
+    imports: [DividerModule,
+        StyleClassModule,
+        PanelModule,
+        ButtonModule,
+        CommonModule,
+        FontAwesomeModule,
+        RouterModule,
+        AppComponent],
+    templateUrl: './home-content.component.html',
+    styleUrl: './home-content.component.scss'
 })
 export class HomeContentComponent {
 

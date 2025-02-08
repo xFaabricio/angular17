@@ -6,11 +6,10 @@ import { SimpleHeaderComponent } from '../../simple-header/simple-header.compone
 import { AppComponent } from '../../app.component';
 
 @Component({
-  selector: 'app-error',
-  standalone: true,
-  imports: [RouterModule, ButtonModule, CommonModule, SimpleHeaderComponent, AppComponent],
-  templateUrl: './error.component.html',
-  styleUrl: './error.component.scss'
+    selector: 'app-error',
+    imports: [RouterModule, ButtonModule, CommonModule, SimpleHeaderComponent, AppComponent],
+    templateUrl: './error.component.html',
+    styleUrl: './error.component.scss'
 })
 export class ErrorComponent {
   constructor(public appComponent: AppComponent) { }

@@ -6,11 +6,10 @@ import { CommonModule } from '@angular/common';
 import { RouterLink } from '@angular/router';
 
 @Component({
-  selector: 'app-topbar',
-  standalone: true,
-  imports: [AppComponent, CommonModule, RouterLink],
-  templateUrl: './topbar.component.html',
-  styleUrl: './topbar.component.scss'
+    selector: 'app-topbar',
+    imports: [AppComponent, CommonModule, RouterLink],
+    templateUrl: './topbar.component.html',
+    styleUrl: './topbar.component.scss'
 })
 export class TopbarComponent {
 

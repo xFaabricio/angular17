@@ -7,12 +7,11 @@ import { MenuItemComponent } from '../menu-item/menu-item.component';
 import { CommonModule } from '@angular/common';
 
 @Component({
-  selector: 'app-menu',
-  standalone: true,
-  imports: [AppComponent, MenuItemComponent, CommonModule],
-  schemas: [CUSTOM_ELEMENTS_SCHEMA],
-  templateUrl: './menu.component.html',
-  styleUrl: './menu.component.scss'
+    selector: 'app-menu',
+    imports: [AppComponent, MenuItemComponent, CommonModule],
+    schemas: [CUSTOM_ELEMENTS_SCHEMA],
+    templateUrl: './menu.component.html',
+    styleUrl: './menu.component.scss'
 })
 export class MenuComponent implements OnInit {
 

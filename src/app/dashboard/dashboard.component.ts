@@ -18,24 +18,18 @@ import { AppComponent } from '../app.component';
 import { ChartService } from '../service/chart.service';
 
 @Component({
-  selector: 'app-dashboard',
-  standalone: true,
-  imports: [CommonModule,
-    FormsModule,
-    ChartModule,
-    MenuModule,
-    TableModule,
-    StyleClassModule,
-    PanelMenuModule,
-    ButtonModule,
-    
-// TODO: `HttpClientModule` should not be imported into a component directly.
-// Please refactor the code to add `provideHttpClient()` call to the provider list in the
-// application bootstrap logic and remove the `HttpClientModule` import from this component.
-HttpClientModule,
-    AppComponent],
-  templateUrl: './dashboard.component.html',
-  styleUrl: './dashboard.component.scss'
+    selector: 'app-dashboard',
+    imports: [CommonModule,
+        FormsModule,
+        ChartModule,
+        MenuModule,
+        TableModule,
+        StyleClassModule,
+        PanelMenuModule,
+        ButtonModule,        
+        AppComponent],
+    templateUrl: './dashboard.component.html',
+    styleUrl: './dashboard.component.scss'
 })
 export class DashboardComponent implements OnInit, OnDestroy {
 

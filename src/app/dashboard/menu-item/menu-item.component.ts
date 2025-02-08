@@ -8,22 +8,21 @@ import { MenuComponent } from '../menu/menu.component';
 import { CommonModule } from '@angular/common';
 
 @Component({
-  selector: '[app-menuitem]',
-  standalone: true,
-  imports: [CommonModule, RouterLink, RouterLinkActive],
-  templateUrl: './menu-item.component.html',
-  animations: [
-    trigger('children', [
-        state('collapsed', style({
-            height: '0'
-        })),
-        state('expanded', style({
-            height: '*'
-        })),
-        transition('collapsed <=> expanded', animate('400ms cubic-bezier(0.86, 0, 0.07, 1)'))
-    ])
-  ],
-  styleUrl: './menu-item.component.scss'
+    selector: '[app-menuitem]',
+    imports: [CommonModule, RouterLink, RouterLinkActive],
+    templateUrl: './menu-item.component.html',
+    animations: [
+        trigger('children', [
+            state('collapsed', style({
+                height: '0'
+            })),
+            state('expanded', style({
+                height: '*'
+            })),
+            transition('collapsed <=> expanded', animate('400ms cubic-bezier(0.86, 0, 0.07, 1)'))
+        ])
+    ],
+    styleUrl: './menu-item.component.scss'
 })
 export class MenuItemComponent implements OnInit, OnDestroy {
 

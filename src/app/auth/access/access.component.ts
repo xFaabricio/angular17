@@ -7,7 +7,6 @@ import { AppComponent } from '../../app.component';
 
 @Component({
     selector: 'app-access',
-    standalone: true,
     templateUrl: './access.component.html',
     styleUrl: './access.component.scss',
     imports: [RouterModule, ButtonModule, CommonModule, SimpleHeaderComponent, AppComponent]

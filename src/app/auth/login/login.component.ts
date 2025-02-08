@@ -13,20 +13,19 @@ import { response } from 'express';
 import { JwtService } from '../../service/jwt.service';
 
 @Component({
-  selector: 'app-login',
-  standalone: true,
-  imports: [CommonModule,    
-            ButtonModule,
-            CheckboxModule,
-            InputTextModule,
-            FormsModule,
-            PasswordModule,
-            RouterModule,
-            AppComponent,
-            SimpleHeaderComponent
-            ],
-  templateUrl: './login.component.html',
-  styleUrl: './login.component.scss'
+    selector: 'app-login',
+    imports: [CommonModule,
+        ButtonModule,
+        CheckboxModule,
+        InputTextModule,
+        FormsModule,
+        PasswordModule,
+        RouterModule,
+        AppComponent,
+        SimpleHeaderComponent
+    ],
+    templateUrl: './login.component.html',
+    styleUrl: './login.component.scss'
 })
 export class LoginComponent {
 
