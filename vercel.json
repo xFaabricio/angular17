@@ -8,9 +8,6 @@
   "build": {
     "env": {
       "NPM_FLAGS": "--force"
-    },
-    "scripts": {
-      "build": "ng build --prod"
     }
   }
 }
