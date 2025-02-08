@@ -8,6 +8,7 @@ import { CommonModule } from '@angular/common';
 
 @Component({
     selector: 'app-menu',
+    standalone: true,
     imports: [AppComponent, MenuItemComponent, CommonModule],
     schemas: [CUSTOM_ELEMENTS_SCHEMA],
     templateUrl: './menu.component.html',

@@ -5,6 +5,7 @@ import { SimpleHeaderComponent } from '../simple-header/simple-header.component'
 
 @Component({
     selector: 'app-notfound',
+    standalone: true,
     imports: [RouterModule, AppComponent, SimpleHeaderComponent],
     templateUrl: './notfound.component.html',
     styleUrl: './notfound.component.scss'

@@ -7,6 +7,7 @@ import { MenuItemComponent } from '../menu-item/menu-item.component';
     selector: 'app-sidebar',
     templateUrl: './sidebar.component.html',
     styleUrl: './sidebar.component.scss',
+    standalone: true,
     imports: [MenuComponent, MenuItemComponent]
 })
 export class SidebarComponent {

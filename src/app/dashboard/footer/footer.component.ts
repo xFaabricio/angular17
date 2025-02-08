@@ -4,6 +4,7 @@ import { LayoutService } from '../../service/app.layout.service';
 
 @Component({
     selector: 'app-footer',
+    standalone: true,
     imports: [AppComponent],
     templateUrl: './footer.component.html',
     styleUrl: './footer.component.scss'

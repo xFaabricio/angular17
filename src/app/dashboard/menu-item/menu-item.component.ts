@@ -9,6 +9,7 @@ import { CommonModule } from '@angular/common';
 
 @Component({
     selector: '[app-menuitem]',
+    standalone: true,
     imports: [CommonModule, RouterLink, RouterLinkActive],
     templateUrl: './menu-item.component.html',
     animations: [

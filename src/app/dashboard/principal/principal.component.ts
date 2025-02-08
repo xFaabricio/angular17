@@ -13,6 +13,7 @@ import { DashboardComponent } from "../dashboard.component";
     selector: 'app-principal',
     templateUrl: './principal.component.html',
     styleUrl: './principal.component.scss',
+    standalone: true,
     imports: [SidebarComponent, TopbarComponent, CommonModule, FooterComponent, RouterOutlet, DashboardComponent]
 })
 export class PrincipalComponent implements OnDestroy {

@@ -7,7 +7,8 @@ import { AppComponent } from '../../app.component';
 
 @Component({
     selector: 'app-error',
-    imports: [RouterModule, ButtonModule, CommonModule, SimpleHeaderComponent, AppComponent],
+    standalone: true,
+    imports: [RouterModule, ButtonModule, CommonModule, SimpleHeaderComponent],
     templateUrl: './error.component.html',
     styleUrl: './error.component.scss'
 })

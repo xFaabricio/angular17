@@ -14,6 +14,7 @@ import { JwtService } from '../../service/jwt.service';
 
 @Component({
     selector: 'app-login',
+    standalone: true,
     imports: [CommonModule,
         ButtonModule,
         CheckboxModule,

@@ -14,6 +14,7 @@ import { RouterModule } from '@angular/router';
 
 @Component({
     selector: 'app-home-content',
+    standalone: true,
     imports: [DividerModule,
         StyleClassModule,
         PanelModule,

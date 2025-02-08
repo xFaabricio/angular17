@@ -19,6 +19,7 @@ import { ChartService } from '../service/chart.service';
 
 @Component({
     selector: 'app-dashboard',
+    standalone: true,
     imports: [CommonModule,
         FormsModule,
         ChartModule,

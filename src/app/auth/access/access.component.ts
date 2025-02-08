@@ -9,6 +9,7 @@ import { AppComponent } from '../../app.component';
     selector: 'app-access',
     templateUrl: './access.component.html',
     styleUrl: './access.component.scss',
+    standalone: true,
     imports: [RouterModule, ButtonModule, CommonModule, SimpleHeaderComponent, AppComponent]
 })
 export class AccessComponent {  

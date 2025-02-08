@@ -5,6 +5,7 @@ import { LayoutService } from './service/app.layout.service';
 
 @Component({
     selector: 'app-root',    
+    standalone: true,
     imports: [RouterOutlet, NgbModule],
     templateUrl: './app.component.html',
     styleUrl: './app.component.scss'
